@@ -1,0 +1,18 @@
+{
+  "cordova-plugin-whitelist": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-whitelist@1"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-splashscreen": {
+    "source": {
+      "type": "local",
+      "path": "/Users/yuchen/dev/company_kyee/template/ios/node_modules/cordova-plugin-splashscreen"
+    },
+    "is_top_level": true,
+    "variables": {}
+  }
+}
