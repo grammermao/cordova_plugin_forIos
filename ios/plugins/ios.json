@@ -12,6 +12,9 @@
     },
     "cordova-plugin-splashscreen": {
       "PACKAGE_NAME": "com.yuchen.demo"
+    },
+    "com.kyee.kymhv2.baidumap": {
+      "PACKAGE_NAME": "com.yuchen.demo"
     }
   },
   "dependent_plugins": {}

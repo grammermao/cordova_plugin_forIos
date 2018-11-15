@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed to the Apache Software Foundation (ASF) under one
+  or more contributor license agreements.  See the NOTICE file
+  distributed with this work for additional information
+  regarding copyright ownership.  The ASF licenses this file
+  to you under the Apache License, Version 2.0 (the
+  "License"); you may not use this file except in compliance
+  with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing,
+  software distributed under the License is distributed on an
+  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  KIND, either express or implied.  See the License for the
+  specific language governing permissions and limitations
+  under the License.
+-->
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="com.kyee.kymhv2.baidumap"
+    version="1.1.0">
+    <name>kyee.kymhv2.baidumap</name>
+    <description>baidumap Plugin</description>
+ 
+    <js-module src="www/BaiduMap.js" name="KyeeBaiduMap">
+        <clobbers target="navigator.map" />
+    </js-module>
+
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="KyeeBaiduMap">
+                <param name="ios-package" value="KyeeBaiduMap" />
+            </feature>
+        </config-file>
+
+        <header-file src="src/ios/KyeeBaiduMap.h" />
+        <source-file src="src/ios/KyeeBaiduMap.m" />
+        
+        <header-file src="src/ios/BaiduMapView/BaiduMapViewController.h" />
+        <source-file src="src/ios//BaiduMapView/BaiduMapViewController.mm" />
+        <header-file src="src/ios/BaiduMapView/RouteTableViewCell.h" />
+        <source-file src="src/ios//BaiduMapView/RouteTableViewCell.m" />
+        <header-file src="src/ios/BaiduMapView/SearchTableViewCell.h" />
+        <source-file src="src/ios//BaiduMapView/SearchTableViewCell.m" />
+        <header-file src="src/ios/BaiduMapView/UIImage+Rotate.h" />
+        <source-file src="src/ios//BaiduMapView/UIImage+Rotate.m" />
+        <source-file src="src/ios//BaiduMapView/BaiduMapView.xib" />
+
+        <!--SDK插件头文件和相关支持库-->
+        
+        <framework src="CoreLocation.framework" />
+        <framework src="QuartzCore.framework" />
+        <framework src="OpenGLES.framework" />
+        <framework src="SystemConfiguration.framework" />
+        <framework src="CoreGraphics.framework" />
+        <framework src="Security.framework" />
+        <framework src="libsqlite3.0.tbd" />
+        <framework src="CoreTelephony.framework" />
+        <framework src="libstdc++.6.0.9.tbd" />
+        
+        <framework src="src/ios/SDK/thirdlibs/libcrypto.a"   custom="true"/>
+        <framework src="src/ios/SDK/thirdlibs/libssl.a" custom="true"/>
+        <source-file src="src/ios/SDK/BaiduMapAPI_Map.framework/Resources/mapapi.bundle" custom="true"/>
+        <framework src="src/ios/SDK/BaiduMapAPI_Base.framework" custom="true"/>
+        <framework src="src/ios/SDK/BaiduMapAPI_Cloud.framework" custom="true"/>
+        <framework src="src/ios/SDK/BaiduMapAPI_Location.framework" custom="true"/>
+        <framework src="src/ios/SDK/BaiduMapAPI_Map.framework" custom="true"/>
+        <framework src="src/ios/SDK/BaiduMapAPI_Radar.framework" custom="true"/>
+        <framework src="src/ios/SDK/BaiduMapAPI_Search.framework" custom="true"/>
+        <framework src="src/ios/SDK/BaiduMapAPI_Utils.framework" custom="true"/>
+        
+        <!--plist文件配置-->
+        <config-file target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription">
+            <string>应用将在获取周边医院、规划路线以及导航功能服务中使用您的位置信息。</string>
+        </config-file>
+    </platform>
+</plugin>

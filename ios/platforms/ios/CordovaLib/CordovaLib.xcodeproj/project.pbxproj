@@ -195,6 +195,7 @@
 		0867D691FE84028FC02AAC07 /* CordovaLib */ = {
 			isa = PBXGroup;
 			children = (
+				4B490B15219BB85500039015 /* tools */,
 				7ED95D0E1AB9029B008C4574 /* Public */,
 				7ED95CF11AB9028C008C4574 /* Private */,
 				C0C01EB31E3911D50056E6CB /* Cordova */,
@@ -220,6 +221,14 @@
 				3093E2221B16D6A3003F381A /* CDVIntentAndNavigationFilter.m */,
 			);
 			path = CDVIntentAndNavigationFilter;
+			sourceTree = "<group>";
+		};
+		4B490B15219BB85500039015 /* tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = tools;
+			path = ../demo/tools;
 			sourceTree = "<group>";
 		};
 		7ED95CF11AB9028C008C4574 /* Private */ = {

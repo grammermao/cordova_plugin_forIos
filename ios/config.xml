@@ -25,4 +25,5 @@
     </platform>
     <engine name="ios" spec="~4.5.5" />
     <plugin name="cordova-plugin-splashscreen" spec="/Users/yuchen/dev/company_kyee/ios-交接/患者端_base/plugins/cordova-plugin-splashscreen" />
+    <plugin name="com.kyee.kymhv2.baidumap" spec="/Users/yuchen/Desktop/com.kyee.kymhv2.baidumap" />
 </widget>

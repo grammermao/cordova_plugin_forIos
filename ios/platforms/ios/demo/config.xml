@@ -53,4 +53,7 @@
         <param name="ios-package" value="CDVSplashScreen" />
         <param name="onload" value="true" />
     </feature>
+    <feature name="KyeeBaiduMap">
+        <param name="ios-package" value="KyeeBaiduMap" />
+    </feature>
 </widget>

@@ -14,5 +14,13 @@
     },
     "is_top_level": true,
     "variables": {}
+  },
+  "com.kyee.kymhv2.baidumap": {
+    "source": {
+      "type": "local",
+      "path": "/Users/yuchen/dev/company_kyee/ios_template/cordova_plugin_forIos/ios/node_modules/com.kyee.kymhv2.baidumap"
+    },
+    "is_top_level": true,
+    "variables": {}
   }
 }
